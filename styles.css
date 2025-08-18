@@ -1,0 +1,78 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #0A74DA;
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+}
+
+.container {
+  background: linear-gradient(145deg, #E5E7EB, #B0B8C2);
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border: 1px solid whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+form input, form select {
+  flex: 1 1 100px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #D0D3D8;
+}
+
+form button {
+  padding: 10px 20px;
+  border: none;
+  background: darkblue;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+form button:hover {
+  background: #0060DF;
+}
+
+button:focus {
+  outline: 2px solid #00E0FF; /* Cyan glow */
+  outline-offset: 2px;
+}
+
+#expense-list {
+  list-style: none;
+  padding: 0;
+}
+
+#expense-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #eee;
+  transition: background 0.3s;
+}
+
+#expense-list li.highlight {
+  background: #e0ffe0;
+}
+
+.delete-btn {
+  color: red;
+  cursor: pointer;
+}
